@@ -895,6 +895,7 @@ D、 交易电量
             wrongCountMap = state.wrongCountMap || {};
 
             if (state.currentExamIds && state.currentExamIds.length > 0) {
+                dom.style.display = 'none';
                 const idMap = new Map(fullPool.map(q => [q.id, q]));
                 currentExam = state.currentExamIds.map(id => idMap.get(id)).filter(q => q);
                 if (currentExam.length > 0) {
@@ -1282,3 +1283,4 @@ D、 交易电量
 </script>
 </body>
 </html>
+
