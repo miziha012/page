@@ -391,7 +391,7 @@
             <button class="retry-btn" id="retryBtn">🔄 重考</button>
         </div>
     </div>
-    <button class="clear-btn" id="clearBtn">🧹 清除缓存并重置</button>
+    <!-- <button class="clear-btn" id="clearBtn">🧹 清除缓存并重置</button> -->
     <div class="footer">每题1分 · 未答题目高亮 · 点击错题编号可定位 · 自动保存答题状态</div>
 </div>
 
@@ -1033,10 +1033,10 @@
     }
 
     // 清除缓存按钮
-    document.getElementById('clearBtn').addEventListener('click', function() {
-        localStorage.removeItem('examState');
-        location.reload();
-    });
+    // document.getElementById('clearBtn').addEventListener('click', function() {
+    //     localStorage.removeItem('examState');
+    //     location.reload();
+    // });
 
     // 事件绑定
     document.getElementById('submitBtn').addEventListener('click', gradeExam);
